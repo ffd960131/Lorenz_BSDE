@@ -271,7 +271,7 @@ SepT = Sep(:,end);
 sel = randperm(M, min(3500,M));
 scatter(E_T(sel), log((SepT(sel)+etaReg)/sep0), 10, 'filled');
 grid on;
-xlabel('$\|X_T-\overline{X}_T\|^2$'); ylabel('$\log((\|\Delta_T\|+\eta)/\|\delta_0\|)$');
+xlabel('$\|X_T-\mu_T\|^2$'); ylabel('$\log((\|\Delta_T\|+\eta)/\|\delta_0\|)$');
 % title('Terminal anomaly energy vs. terminal separation (log-ratio)');
 set_axes_font(FS);
 
@@ -317,7 +317,7 @@ nexttile;
 sel = randperm(M, min(3200,M));
 scatter(E_T(sel), g2(sel), 10, 'filled');
 grid on;
-xlabel('$\|X_T-\overline{X}_T\|^2$'); ylabel('$g_2$');
+xlabel('$\|X_T-\mu_T\|^2$'); ylabel('$g_2$');
 % title('Anomaly energy versus sensitivity proxy at $T$');
 set_axes_font(FS);
 
